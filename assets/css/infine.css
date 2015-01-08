@@ -953,7 +953,8 @@
 
 .speakers-wrapper {
     background-color: #292c33;
-    padding-bottom: 40px
+    padding-bottom: 40px;
+    color:#fff;
 }
 
 .speakers-wrapper h2 {

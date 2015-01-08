@@ -148,8 +148,8 @@
                         </div><!-- /.image -->
 
                         <div class="span7">
-                            <p class="name">BB-2015-01-01</p>
-                            <p class="company">[2015-01-01] OpenWrt for HC5661/HC5761 (Barrier Breaker - r43770)</p>
+                            <p class="name">BB-2015-01-08</p>
+                            <p class="company">[2015-01-08] OpenWrt for HC5661/HC5761 (Barrier Breaker - r43770)</p>
                             <p class="talk-title"><a target="_blank" href="https://github.com/rssnsj/openwrt-hc5761/releases/download/BB-2015-01-08/openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.zip">下载地址</a></p>
                             <p class="time"><span class="time-start">推荐指数:</span>5</p>
                             <p class="content">
@@ -181,8 +181,8 @@
                         </div><!-- /.image -->
 
                         <div class="span7">
-                            <p class="name">BB-2015-01-01</p>
-                            <p class="company">[2015-01-01] OpenWrt for HC5661/HC5761 (Barrier Breaker - r43770)</p>
+                            <p class="name">BB-2015-01-08</p>
+                            <p class="company">[2015-01-08] OpenWrt for HC5661/HC5761 (Barrier Breaker - r43770)</p>
                             <p class="talk-title"><a target="_blank" href="https://github.com/rssnsj/openwrt-hc5761/releases/download/BB-2015-01-08/openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.zip">下载地址</a></p>
                             <p class="time"><span class="time-start">推荐指数:</span>5</p>
                             <p class="content">
@@ -214,8 +214,8 @@
                         </div><!-- /.image -->
 
                         <div class="span7">
-                            <p class="name">BB-2015-01-01</p>
-                            <p class="company">[2015-01-01] OpenWrt for HC5661/HC5761 (Barrier Breaker - r43770)</p>
+                            <p class="name">BB-2015-01-08</p>
+                            <p class="company">[2015-01-08] OpenWrt for HC5661/HC5761 (Barrier Breaker - r43770)</p>
                             <p class="talk-title"><a target="_blank" href="https://github.com/rssnsj/openwrt-hc5761/releases/download/BB-2015-01-08/openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.zip">下载地址</a></p>
                             <p class="time"><span class="time-start">推荐指数:</span>5</p>
                             <p class="content">
@@ -279,16 +279,16 @@
                 <div class="row features-description">
                   <div class="span1"></div>
                   <div class="span10">
-首先确认你的u-boot是已经解锁的，方法你懂的 :) .<br/>
-为你电脑的“本地连接”加一个IP: 192.168.1.88 / 255.255.255.0<br/>
-解压刷机工具包（例如 tftpd64.400.rar）, 根据操作系统位数, 32位运行tftpd32, 64位运行tftpd64.<br/>
-用上面生成的相应机型的 XXXX-recovery.bin 替换刷机包目录下的 recovery.bin .<br/>
-拔掉HiWiFi电源线.<br/>
-网线一头连HiWiFi的LAN口, 一头连电脑.<br/>
-用尖锐物按住HiWiFi背后的reset孔不松动, 同时给路由器接电.<br/>
-直到看到tftpd出现进度条, 松开.<br/>
-前面板的指示灯会轮流闪烁, 表明内部Flash正在擦写, 此时不要断电<br/>
-ping 192.168.1.1, 直到ping通, 刷机过程总共3-5分钟.</div>
+1、首先确认你的u-boot是已经解锁的，方法你懂的 :) .<br/>
+2、为你电脑的“本地连接”加一个IP: 192.168.1.88 / 255.255.255.0<br/>
+3、解压刷机工具包（例如 tftpd64.400.rar）, 根据操作系统位数, 32位运行tftpd32, 64位运行tftpd64.<br/>
+4、用上面生成的相应机型的 XXXX-recovery.bin 替换刷机包目录下的 recovery.bin .<br/>
+5、拔掉HiWiFi电源线.<br/>
+6、网线一头连HiWiFi的LAN口, 一头连电脑.<br/>
+7、用尖锐物按住HiWiFi背后的reset孔不松动, 同时给路由器接电.<br/>
+8、直到看到tftpd出现进度条, 松开.<br/>
+9、前面板的指示灯会轮流闪烁, 表明内部Flash正在擦写, 此时不要断电<br/>
+10、ping 192.168.1.1, 直到ping通, 刷机过程总共3-5分钟.</div>
                   <div class="span1"></div>
                 </div>
             </div>
@@ -338,24 +338,10 @@ sysupgrade -F -n openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin<br
                 <br><br>
                 <div class="row features-description">
                   <div class="span1"></div>
-                  <div class="span10 features-description">固件编译方法
-
-# 安装必需的软件包（仅限Ubuntu/Debian）<br/>
-sudo apt-get install build-essential git flex gettext libncurses5-dev unzip gawk liblzma-dev u-boot-tools
-<br/>
-# 编译<br/>
-git clone https://github.com/rssnsj/openwrt-hc5761.git -b master openwrt-hc5761<br/>
-cd openwrt-hc5761<br/>
-make<br/>
-说明<br/>
-
-以上svn目录包含了HC5761的OpenWrt补丁，checkout下来代码直接make，会自动打补丁、自动配置menuconfig，并自动编译；<br/>
-编译时若碰到代码包下载失败，或下载过于缓慢，请先 Ctrl + C 暂停，手动下载同名的文件放到 openwrt-ramips/dl <br/>下面，再执行“make”继续编译；<br/>
-openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin 是sysupgrade格式的固件，传到路由器的/<br/>tmp下，通过串口登录极2/极1S，执行以下命令刷入：<br/>
-<br/>
-sysupgrade -F -n openwrt-ramips-mt7620a-hiwifi-hc5761-squashfs-sysupgrade.bin<br/>
-<br/>
-本编译方法同时会在recovery.bin目录下生成 openwrt-HC5761-recovery.bin、openwrt-HC5661-recovery.bin <br/>两个文件，分别是极2、极1S的带u-boot固件，u-boot解锁后可用TFTP刷机。</div>
+                  <div class="span10 features-description">
+                      ....<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                  </div>
                   <div class="span1"></div>
                 </div>
             </div>
