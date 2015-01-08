@@ -169,8 +169,8 @@ $(document).ready(function() {
     $(window).bind("scroll", showBtn);
   })();
 
-    $("img.lazy").lazyload({
-        effect : "fadeIn"
-    });
+    // $("img.lazy").lazyload({
+    //     effect : "fadeIn"
+    // });
 
 });
