@@ -1,7 +1,7 @@
 openwrt-hiwifi.github.io
 ==============
 
-# About the project
+## About the project
 
  This project is for OpenWrt support for HiWiFi J1S and HiWiFi v2 and other MT7620A based routers, with customized applications and usefull features (e.g., Shadowsocks).
 
