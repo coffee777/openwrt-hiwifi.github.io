@@ -12,6 +12,6 @@ Source code for website http://openwrt-hiwifi.github.io/
 ----
 
 ## View our projects at:
- HiWiFi J1S/J2 firmware: https://github.com/rssnsj/openwrt-hc5761/
- Xiaomi Mini firmware: https://github.com/rssnsj/openwrt-xiaomi-mini
- HiWiFi J1 (Atheros AR9331, not MTK): https://github.com/rssnsj/openwrt-hc6361
+* HiWiFi J1S/J2 firmware: https://github.com/rssnsj/openwrt-hc5761/
+* Xiaomi Mini firmware: https://github.com/rssnsj/openwrt-xiaomi-mini
+* HiWiFi J1 (Atheros AR9331, not MTK): https://github.com/rssnsj/openwrt-hc6361
