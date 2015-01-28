@@ -18,5 +18,4 @@ Source code for website http://openwrt-hiwifi.github.io/
 
 ----
 
-- Justin
-- 2015/01/28
+Justin / 2015/01/28
